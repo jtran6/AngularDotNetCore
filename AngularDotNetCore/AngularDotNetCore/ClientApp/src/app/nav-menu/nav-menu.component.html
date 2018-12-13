@@ -1,0 +1,105 @@
+<header>
+  <nav class='navbar navbar-expand-xl navbar-toggleable-xl navbar-light bg-white border-bottom box-shadow mb-3'>
+    <div class="container">
+      <a class="navbar-brand" [routerLink]='["/"]'>Procurement Partners</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded" (click)="toggle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]='{"show": isExpanded}'>
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" [routerLink]='[""]' id="homeDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Home
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link dropdown-toggle text-dark" [routerLink]='["/counter"]' id="orderDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Order
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link dropdown-toggle text-dark" [routerLink]='["/fetch-data"]' id="transactionsDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Transactions
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link dropdown-toggle text-dark" [routerLink]='["/fetch-data"]' id="reportsDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Reports
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link dropdown-toggle text-dark" [routerLink]='["/fetch-data"]' id="vendorManagementDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Vendor
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link dropdown-toggle text-dark" [routerLink]='["/fetch-data"]' id="securityDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Security
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link dropdown-toggle text-dark" [routerLink]='["/fetch-data"]' id="administrationDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Administration
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link dropdown-toggle text-dark" [routerLink]='["/fetch-data"]' id="budgetDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Budget
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link dropdown-toggle text-dark" [routerLink]='["/fetch-data"]' id="profileDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Profile
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
